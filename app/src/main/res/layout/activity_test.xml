@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestActivity"
+    android:background="@android:color/black"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Top"
+                android:layout_alignParentTop="true"
+              >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Timer"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:text="Timer"
+                    android:layout_marginRight="10dp"
+                    android:textSize="30dp"
+                    android:textColor="@android:color/white">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/QuestionNumber"
+                    android:text="QuestionN"
+                    android:textSize="30dp"
+                    android:textColor="@android:color/white">
+                </TextView>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Subject"
+                android:layout_below="@+id/Top"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Subject"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textColor="@android:color/white">
+            </TextView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="40dp"
+                android:layout_below="@+id/Subject"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:text="Question"
+                android:gravity="center"
+                android:id="@+id/Question"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="40dp"
+                android:id="@+id/Options_Radio_Group"
+                android:layout_below="@+id/Question"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/option1"
+                    android:text="Option1"
+                    android:textSize="10dp"
+                    android:layout_margin="20dp"
+                    android:buttonTint="@android:color/white"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"></RadioButton>
+
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/option2"
+                    android:text="Option2"
+                    android:textSize="10dp"
+                    android:layout_margin="20dp"
+                    android:buttonTint="@android:color/white"
+                    android:textColor="@android:color/white"></RadioButton>
+
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/option3"
+                    android:text="Option3"
+                    android:gravity="center"
+                    android:layout_margin="20dp"
+                    android:buttonTint="@android:color/white"
+                    android:textSize="10dp"
+                    android:textColor="@android:color/white"></RadioButton>
+
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/option4"
+                    android:text="Option4"
+                    android:gravity="center"
+                    android:buttonTint="@android:color/white"
+                    android:layout_margin="20dp"
+                    android:textSize="10dp"
+                    android:textColor="@android:color/white"></RadioButton>
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttons_linear_layout_test"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_below="@+id/Options_Radio_Group">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Skip"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button_home1"
+                    android:textSize="30dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/Skip_button"></Button>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Next"
+                    android:layout_margin="40dp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button_home"
+                    android:textSize="30dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/Continue_button"></Button>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_below="@id/buttons_linear_layout_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_home"
+                android:gravity="center"
+                android:id="@+id/submit_button"
+                android:layout_centerHorizontal="true"
+                android:text="Submit"/>
+
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

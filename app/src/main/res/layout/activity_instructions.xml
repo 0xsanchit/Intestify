@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Instructions"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@android:color/black">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Important Instructions"
+        android:id="@+id/Important_Intructions"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_margin="40dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Instructions"
+        android:layout_below="@+id/Important_Intructions"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:layout_margin="40dp"
+        android:gravity="center"
+        android:text="1.Keep all the browsers closed while attempting the test.\n\n2. Each question carries 4 marks with a negative mark for every wrong submission.\n\n3.If you leave the test in the middle, you will not have the scores added to the report card"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="40dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/holo_purple"
+        android:text="4.At the end of each test, you can request an expert to review your scores, and send you a personalised plan to follow for INR 90"
+        android:layout_below="@+id/Instructions"
+        android:id="@+id/final_instruction"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/final_instruction"
+        android:layout_margin="40dp"
+        android:background="@drawable/button_home"
+        android:id="@+id/start_timer_button"
+        android:textColor="@android:color/white"
+        android:text="Start the timer"/>
+
+
+
+
+</RelativeLayout>

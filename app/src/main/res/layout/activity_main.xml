@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@android:color/black"
+    >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:layout_alignParentTop="true"
+            android:layout_margin="45dp"
+            android:textSize="30dp"
+            android:id="@+id/textSignIn"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="50dp">
+        </TextView>
+
+        <EditText
+            android:layout_marginTop="100dp"
+            android:id="@+id/loginEmail"
+            android:layout_below="@+id/textSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email address"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/edit_text_bottom_line"
+            android:layout_marginLeft="15dp"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/loginpaswd"
+            android:background="@drawable/edit_text_bottom_line"
+            android:textColorHint="@android:color/white"
+            android:layout_below="@+id/loginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:hint="Password"
+            android:textColor="@android:color/white"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btnLogIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Login "
+            android:layout_above="@+id/TVSignIn"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_home1"
+            android:textSize="25dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/loginpaswd"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:checked="true"
+            android:text="Remember Me" />
+
+        <TextView
+            android:id="@+id/TVSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Dont have an account?Sign up"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+</RelativeLayout>

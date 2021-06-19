@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseTimeLimit"
+    android:background="@android:color/black"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:text="Choose your Time Limit"
+        android:textColor="@android:color/white"
+        android:id="@+id/top_message_choose_test"
+        android:gravity="center"
+        android:textSize="30dp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/choose_subject"
+        android:layout_below="@+id/top_message_choose_test"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:gravity="center">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="45 minutes"
+            android:id="@+id/option1"
+            android:buttonTint="@android:color/white"
+            android:layout_margin="20dp"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="90 minutes"
+            android:id="@+id/option2"
+            android:buttonTint="@android:color/white"
+            android:layout_margin="20dp"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="180 minutes"
+            android:id="@+id/option3"
+            android:buttonTint="@android:color/white"
+            android:layout_margin="20dp"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Begin My Test"
+        android:id="@+id/begin_test"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_home"
+        android:layout_below="@+id/choose_subject"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="50dp"
+        />
+
+
+
+
+
+</RelativeLayout>

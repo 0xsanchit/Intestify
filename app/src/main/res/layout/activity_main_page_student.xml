@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPageStudent"
+    android:background="@android:color/black"
+    android:layout_gravity="center">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back"
+        android:textColor="@android:color/white"
+        android:id="@+id/Greeting"
+        android:layout_margin="40dp"
+        android:gravity="center"
+        android:textSize="25dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/previous_tests"
+        android:layout_below="@+id/Greeting"
+        android:layout_above="@+id/take_a_test_button"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:text="Take a Test"
+        android:id="@+id/take_a_test_button"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_home"
+        android:layout_alignParentBottom="true"/>
+
+
+
+
+</RelativeLayout>
